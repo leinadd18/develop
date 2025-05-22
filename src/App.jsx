@@ -1,7 +1,11 @@
+import BarraNavegacao from './components/BarraNavegacao';
 import Mapa from './pages/Mapa';
 
-function App() {
-  return <Mapa />;
+export default function App() {
+  return (
+    <div className="app">
+      <Mapa />
+      <BarraNavegacao />
+    </div>
+  );
 }
-
-export default App;

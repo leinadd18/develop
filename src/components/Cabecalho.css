@@ -3,15 +3,22 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #465EFF;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: center;
-  gap: 600px; /* Aumentei de 40px para 60px */
+  background-color: #465eff;
+  padding: 10px 0;
   z-index: 1000;
 }
 
-.xp, .micoins {
+.header-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.xp,
+.micoins {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -28,18 +35,30 @@
   height: 18px;
 }
 
-/* Versão mobile */
+/* Versão mobile com 34px das bordas */
 @media (max-width: 480px) {
-  .top-header {
-    padding: 8px 10px;
-    gap: 30px; /* Aumentei de 20px para 30px */
+  .header-container {
+    max-width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
   }
-  
-  .xp, .micoins {
+
+  .xp {
+    margin-left: 34px; /* 34px da borda esquerda */
+  }
+
+  .micoins {
+    margin-right: 34px; /* 34px da borda direita */
+  }
+
+  .xp,
+  .micoins {
     padding: 5px 8px;
     font-size: 13px;
+    flex: 0 0 auto; /* Impede que as divs se estiquem */
   }
-  
+
   .top-header img {
     width: 16px;
     height: 16px;
