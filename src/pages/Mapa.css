@@ -1,0 +1,10 @@
+.content {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 400px;
+}
