@@ -1,0 +1,20 @@
+.titulo-fase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+    .titulo-fase h1 {
+        font-size: 28px;
+    }
+
+     .titulo-fase p {
+        font-size: 12px;
+    }
+
+    .fases {
+        width: 100%; 
+    }
+}
